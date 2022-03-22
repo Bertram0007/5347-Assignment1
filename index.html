@@ -1,0 +1,48 @@
+<html>
+<head lang="en">
+  <meta charset="utf-8" />
+  <title>COMP5347 Assignment One</title>
+  <link rel="stylesheet" href="index.css" />
+  <script type="text/javascript" src="index.js"></script>
+</head>
+<body>
+
+<div id="searchBox">
+  <input
+    type="text" id="keyword" placeholder="Please type" name="searchText"/>
+  <button type="button" id="search_Button" name="searchButton">Search</button>
+  <select id="categories">
+    <option>Category</option>
+    <option>Art</option>
+    <option>Science History</option>
+    <option>Science Fiction</option>
+    <option>Health</option>
+    <option>Action and Adventure</option>
+  </select>
+  <button id="filterButton" name="filterButton">Filter</button>
+
+  <button  class="moveRight" id="add_Button" name="addButton">Add to Cart</button>
+  <button class="moveRight" id="reset_Button" name="resetButton">Reset</button>
+  <img class="moveRight" id="cart" src="./images/shopping_cart.png" height="20" width="20"/>
+  <span class="moveRight" id="cartNum">(0)</span>
+
+</div>
+<div id="listBox">
+  <table>
+    <caption></caption>
+    <thead id="thread">
+    <tr>
+      <th colspan="3">Title</th>
+      <th>Authors</th>
+      <th>Year</th>
+      <th>Price</th>
+      <th>Publisher</th>
+      <th>Category</th>
+    </tr>
+    </thead>
+    <tbody id="listTbody">
+    </tbody>
+  </table>
+</div>
+</body>
+</html>
